@@ -1,11 +1,13 @@
 
 #folder build
+*.suo
+*.aps
+*.ncb
+*.user
 Debug/
 Release/
 x64/
 build/
-*.aps
-*.ncb
-*.user
+
 *vscode/
 Jamfile*

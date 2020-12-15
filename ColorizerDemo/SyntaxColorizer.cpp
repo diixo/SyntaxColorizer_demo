@@ -122,7 +122,6 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "indeed,"
       "instead,"
       "into,"
-      "is,"
       "it,"
       "its,"
       "just,"
@@ -203,6 +202,21 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "you,"
       "your,"
       "yours"
+;
+
+LPTSTR sVerbForms = 
+"am,is,are,being,was,were,been,"
+"takes,taking,took,taken,"
+"puts,putting,"
+"has,having,had,"
+"gets,getting,got,"
+"comes,coming,came,"
+"does,doing,did,done,"
+"makes,making,made,"
+"goes,going,went,gone,"
+"runs,running,ran,"
+"incomes,incoming,outgoing,"
+"could,might,"
 ;
 
 LPTSTR sDirectives = 
@@ -449,6 +463,7 @@ LPTSTR sDirectives =
 "hold,"
 "hope,"
 "hurt,"
+"impact,"
 "include,"
 "increase,"
 "inform,"
@@ -775,6 +790,8 @@ LPTSTR sVerbsExtended =
    AddKeyword(sDirectives, RGB(255, 0, 0), GRP_KEYWORD);
    AddKeyword(sVerbsContext, RGB(0, 0, 255), GRP_KEYWORD);
    AddKeyword(sVerbsExtended, RGB(0, 0, 255), GRP_KEYWORD);
+   AddKeyword(sVerbForms, RGB(128, 0, 192), GRP_KEYWORD);
+   
    AddKeyword("REM,Rem,rem", RGB(255, 0, 255), 4);
 }
 
