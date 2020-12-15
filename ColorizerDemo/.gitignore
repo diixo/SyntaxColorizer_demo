@@ -1,0 +1,11 @@
+
+#folder build
+Debug/
+Release/
+x64/
+build/
+*.aps
+*.ncb
+*.user
+*vscode/
+Jamfile*
