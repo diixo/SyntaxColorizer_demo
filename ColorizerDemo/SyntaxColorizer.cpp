@@ -184,7 +184,6 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "me,"
       "might,"
       "more,"
-      "moreover,"
       "most,"
       "my,"
       "nope,"
@@ -273,6 +272,7 @@ LPTSTR sVerbForms =
 ;
 
 LPTSTR sAdverb = 
+   "moreover,"
    "enough,"
    "again,"
    "forever,"
@@ -823,6 +823,7 @@ LPTSTR sVerbsExtended =
 "multiply,"
 "notice,"
 "notify,"
+"occur,"
 "offer,"
 "operate,"
 "optimize,"
