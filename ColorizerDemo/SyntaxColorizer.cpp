@@ -187,6 +187,7 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "until,"
       "up,"
       "upon,"
+      "upward,"
       "very,"
       "via,"
       "we,"
@@ -218,6 +219,7 @@ LPTSTR sVerbForms =
    "can,could,"
    "may,might,"
    "will,would,"
+   "shall,should,"
 ;
 
 LPTSTR sDirectives = 
@@ -516,6 +518,7 @@ LPTSTR sDirectives =
 "offer,"
 "open,"
 "organize,"
+"ought,"
 "owe,"
 "pass,"
 "pay,"
