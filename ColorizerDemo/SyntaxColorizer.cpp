@@ -105,6 +105,7 @@ void CSyntaxColorizer::createDefaultCharFormat()
 // <*nch>
 // <*ish>
 // <*ive>
+// <*ide>
 //***********
 // <*s>
 // <*ing>
