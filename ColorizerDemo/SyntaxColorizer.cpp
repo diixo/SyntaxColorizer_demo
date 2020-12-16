@@ -87,13 +87,19 @@ void CSyntaxColorizer::createDefaultCharFormat()
 // <*el>
 // <*er>
 // <*ize>
-// <*ess>
+// <*iss>
 // <*ies>
 // <*age>
 // <*ect>
 // <*it>
 // <*ain>
+// <*aim>
 // <*ual>
+// <*ate>
+// <*ar>
+// <*ear>
+// <*ue>
+// <*ind>
 
 void CSyntaxColorizer::createDefaultKeywordList()
 {
@@ -177,7 +183,6 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "often,"
       "on,"
       "once,"
-      "one,"
       "only,"
       "onto,"
       "or,"
@@ -341,7 +346,6 @@ LPTSTR sDirectives =
 
    "further,"
    "matter,"
-   "varied,"
 
    "beside,"
    "near,"
@@ -352,7 +356,6 @@ LPTSTR sDirectives =
    "except,"
    "aside,"
    "against,"
-   "compared,"
    "versus,"
    "nearly,"
    "roughly,"
@@ -367,6 +370,7 @@ LPTSTR sDirectives =
    "everything,"
    "everyone,"
    "everybody,"
+   "one,"
 
    "itself,"
    "myself,"
@@ -929,10 +933,12 @@ void CSyntaxColorizer::createTables()
 	memset(m_pTableFour, SKIP, 256);
    memset(m_pAllowable, false, 256);
 
+   /*
 	*(m_pTableZero + '"') = DQSTART; *(m_pTableZero + '\'')  = SQSTART;
 	*(m_pTableZero + '/') = CMSTART; *(m_pTableOne + '"')    = DQEND;
 	*(m_pTableTwo + '\'') = SQEND;   *(m_pTableThree + '\n') = SLEND;
 	*(m_pTableFour + '*') = MLEND;
+   */
 
 	*(m_pAllowable + '\n') = true; *(m_pAllowable + '\r') = true;
 	*(m_pAllowable + '\t') = true; *(m_pAllowable + '\0') = true;
@@ -947,6 +953,10 @@ void CSyntaxColorizer::createTables()
 	*(m_pAllowable + '?')  = true;
    *(m_pAllowable + ':')  = true;
    *(m_pAllowable + '/')  = true;
+
+   *(m_pAllowable + '"') = true;
+   *(m_pAllowable + '\'') = true;
+   *(m_pAllowable + '*') = true;
 }
 
 void CSyntaxColorizer::deleteTables()
