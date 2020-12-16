@@ -60,6 +60,7 @@ void CSyntaxColorizer::createDefaultCharFormat()
 // <*ment>
 // <*ing>
 // <*ed>
+// <*es>
 // <*ision>
 // <*tion>
 // <*ous>
