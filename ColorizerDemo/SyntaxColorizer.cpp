@@ -204,20 +204,20 @@ void CSyntaxColorizer::createDefaultKeywordList()
 ;
 
 LPTSTR sVerbForms = 
-"am,is,are,being,was,were,been,"
-"takes,taking,took,taken,"
-"puts,putting,"
-"has,having,had,"
-"gets,getting,got,"
-"comes,coming,came,"
-"does,doing,did,done,"
-"makes,making,made,"
-"goes,going,went,gone,"
-"runs,running,ran,"
-"incomes,incoming,outgoing,"
-"can,could,"
-"may,might,"
-"will,would,"
+   "am,is,are,being,was,were,been,"
+   "takes,taking,took,taken,"
+   "puts,putting,"
+   "has,having,had,"
+   "gets,getting,got,"
+   "comes,coming,came,"
+   "does,doing,did,done,"
+   "makes,making,made,"
+   "goes,going,went,gone,"
+   "runs,running,ran,"
+   "incomes,incoming,outgoing,"
+   "can,could,"
+   "may,might,"
+   "will,would,"
 ;
 
 LPTSTR sDirectives = 
@@ -697,6 +697,7 @@ LPTSTR sVerbsExtended =
 "modify,"
 "multiply,"
 "notice,"
+"notify,"
 "offer,"
 "operate,"
 "optimize,"

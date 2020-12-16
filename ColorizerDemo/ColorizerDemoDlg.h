@@ -10,7 +10,7 @@
 
 #include "SyntaxColorizer.h"
 
-#define STR_FILTER "C++ Source Files\0*.cpp;\0Header Files\0*.h\0\0"
+#define STR_FILTER "Text Files\0*.txt;\0U16 Files\0*.u16\0\0"
 //#define STR_INITDIR "C:\\My Documents"
 #define STR_INITDIR "C:\\Program Files\\Microsoft Visual Studio\\VC98\\MFC\\SRC"
 #define GRP_KEYWORD		0
