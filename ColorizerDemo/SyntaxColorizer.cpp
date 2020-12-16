@@ -59,6 +59,7 @@ void CSyntaxColorizer::createDefaultCharFormat()
 // templates will be green color
 // <*ment>
 // <*ing>
+// <*int>
 // <*ed>
 // <*es>
 // <*ision>
@@ -81,6 +82,10 @@ void CSyntaxColorizer::createDefaultCharFormat()
 // <*ey>
 // <*ve>
 // <*nce>
+// <*nse>
+// <*se>
+// <*el>
+// <*er>
 
 void CSyntaxColorizer::createDefaultKeywordList()
 {
