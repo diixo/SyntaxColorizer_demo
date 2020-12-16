@@ -66,6 +66,7 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "across,"
       "after,"
       "again,"
+      
       "all,"
       "along,"
       "also,"
@@ -226,6 +227,8 @@ LPTSTR sDirectives =
    "past,"
    "late,"
    "till,"
+   "ago,"
+   "since,"
 
    "same,"
    "some,"
@@ -336,6 +339,7 @@ LPTSTR sDirectives =
    "everywhere,"
    "anywhere,"
    "somewhere,"
+   "whereas,"
    "endlessly,"
    "timelessly,"
    "apparently,"
@@ -364,7 +368,19 @@ LPTSTR sDirectives =
    "opposite,"
 
    "inside,"
-   "outside"
+   "outside,"
+
+   "last,"
+   "ready,"
+   "begin,"
+   "end,"
+   "new,"
+   "date,"
+   "etc,"
+
+   "how,"
+   "when,"
+   "where,"
 ;
 
    LPTSTR sVerbsContext = 
