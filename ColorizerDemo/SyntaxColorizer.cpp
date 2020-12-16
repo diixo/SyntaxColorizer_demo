@@ -221,6 +221,11 @@ LPTSTR sVerbForms =
 ;
 
 LPTSTR sDirectives = 
+   "past,"
+   "late,"
+   "till,"
+
+   "same,"
    "some,"
    "because,"
    "few,"
@@ -597,6 +602,7 @@ LPTSTR sDirectives =
 LPTSTR sVerbsExtended = 
 "activate,"
 "add,"
+"advise,"
 "affect,"
 "approve,"
 "argue,"
@@ -635,6 +641,7 @@ LPTSTR sVerbsExtended =
 "decide,"
 "declare,"
 "decode,"
+"delay,"
 "delete,"
 "deliver,"
 "demonstrate,"
@@ -647,6 +654,7 @@ LPTSTR sVerbsExtended =
 "discuss,"
 "display,"
 "distribute,"
+"dress,"
 "enable,"
 "enter,"
 "escape,"
