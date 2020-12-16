@@ -77,15 +77,23 @@ void CSyntaxColorizer::createDefaultCharFormat()
 // <*fy>
 // <*ite>
 // <*ess>
-// <*ity>
 // <*ial>
 // <*ey>
 // <*ve>
 // <*nce>
 // <*nse>
+// <*re>
 // <*se>
 // <*el>
 // <*er>
+// <*ize>
+// <*ess>
+// <*ies>
+// <*age>
+// <*ect>
+// <*it>
+// <*ain>
+// <*ual>
 
 void CSyntaxColorizer::createDefaultKeywordList()
 {
