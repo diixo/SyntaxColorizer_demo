@@ -187,6 +187,7 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "more,"
       "most,"
       "my,"
+      "no,"
       "nope,"
       "not,"
       "of,"
@@ -246,6 +247,7 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "with,"
       "within,"
       "without,"
+      "yes,"
       "yet,"
       "you,"
       "your,"
@@ -268,6 +270,7 @@ LPTSTR sVerbForms =
    "may,might,"
    "will,would,"
    "shall,should,"
+   "gives,giving,gave,given"
 ;
 
 LPTSTR sAdverb = 
