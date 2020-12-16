@@ -65,7 +65,7 @@ void CSyntaxColorizer::createDefaultCharFormat()
 // <*tion>
 // <*ous>
 // <*ly>
-// <*able>
+// <*ble>
 // <*ful>
 // <*ent>
 // <*al>
@@ -75,6 +75,12 @@ void CSyntaxColorizer::createDefaultCharFormat()
 // <*ity>
 // <*fy>
 // <*ite>
+// <*ess>
+// <*ity>
+// <*ial>
+// <*ey>
+// <*ve>
+// <*nce>
 
 void CSyntaxColorizer::createDefaultKeywordList()
 {
@@ -85,6 +91,7 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "above,"
       "across,"
       "after,"
+      "ahead,"
       "all,"
       "along,"
       "also,"
@@ -95,7 +102,6 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "another,"
       "any,"
       "anytime,"
-      "apart,"
       "apparent,"
       "are,"
       "around,"
@@ -129,7 +135,6 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "here,"
       "him,"
       "his,"
-      "however,"
       "i,"
       "if,"
       "in,"
@@ -166,6 +171,7 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "over,"
       "per,"
       "rather,"
+      "round,"
       "self,"
       "several,"
       "she,"
@@ -242,6 +248,48 @@ LPTSTR sAdverb =
    "therefore,"
    "overall,"
    "thus,"
+   "apart,"
+   "together,"
+   "however,"
+   "sometimes,"
+
+   "entirely,"
+   "especially,"
+   "generally,"
+   "finally,"
+   "largely,"
+   "mainly,"
+   "mostly,"
+   "chiefly,"
+   "principally,"
+   "really,"
+   "typically,"
+   "usually,"
+   "probably,"
+   "actually,"
+   "truly,"
+   "eventually,"
+   "evidently,"
+   "doubtlessly,"
+   "endlessly,"
+   "apparently,"
+   "obviously,"
+   "partially,"
+   "partly,"
+   "fully,"
+   "wholly,"
+   "merely,"
+   "simply,"
+   "recently,"
+   "lately,"
+   "newly,"
+   "respectively,"
+   "regularly,"
+   "ideally,"
+   "normally,"
+   "commonly,"
+   "preferably,"
+   "currently,"
 ;
 
 LPTSTR sDirectives = 
@@ -276,7 +324,6 @@ LPTSTR sDirectives =
    "further,"
    "matter,"
    "varied,"
-   "preferably,"
 
    "beside,"
    "near,"
@@ -314,29 +361,13 @@ LPTSTR sDirectives =
    "ourselves,"
 
    "entire,"
-   "entirely,"
-   "especially,"
+
    "general,"
-   "generally,"
-   "finally,"
-   "largely,"
-   "mainly,"
-   "mostly,"
-   "chiefly,"
 
    "real,"
    "fact,"
    "effect,"
 
-   "principally,"
-   "really,"
-   "typically,"
-   "usually,"
-   "probably,"
-
-   "actually,"
-   "truly,"
-   "eventually,"
    "full,"
    "total,"
 
@@ -352,12 +383,11 @@ LPTSTR sDirectives =
    "thing,"
    "nobody,"
    "common,"
-   "commonly,"
+
    "usual,"
    "normal,"
-   "normally,"
+
    "regular,"
-   "regularly,"
 
    "forevermore,"
    "evermore,"
@@ -365,32 +395,15 @@ LPTSTR sDirectives =
    "anywhere,"
    "somewhere,"
    "whereas,"
-   "endlessly,"
-   "timelessly,"
-   "apparently,"
-   "obviously,"
-   "evidently,"
+
    "doubtless,"
-   "doubtlessly,"
 
    "evident,"
    "obvious,"
 
-   "partially,"
-   "partly,"
-   "fully,"
-   "wholly,"
-
-   "merely,"
-   "simply,"
    "recent,"
-   "recently,"
-   "lately,"
-   "newly,"
-   "respectively,"
    "low,"
    "high,"
-   "ideally,"
 
    "opposed,"
    "contrast,"
@@ -398,6 +411,7 @@ LPTSTR sDirectives =
 
    "inside,"
    "outside,"
+   "next,"
 
    "last,"
    "ready,"
