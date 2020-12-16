@@ -86,6 +86,7 @@ void CSyntaxColorizer::createDefaultCharFormat()
 // <*ize>
 // <*iss>
 // <*ies>
+// <*ier>
 // <*age>
 // <*ect>
 // <*it>
@@ -240,9 +241,7 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "very,"
       "via,"
       "we,"
-      "what,"
       "whatever,"
-      "which,"
       "while,"
       "with,"
       "within,"
@@ -454,9 +453,15 @@ LPTSTR sDirectives =
    "date,"
    "etc,"
 
+   // questions:
    "how,"
    "when,"
    "where,"
+   "why,"
+   "which,"
+   "whom,"
+   "whose,"
+   "what,"
 ;
 
    LPTSTR sVerbsContext = 
