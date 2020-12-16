@@ -56,6 +56,25 @@ void CSyntaxColorizer::createDefaultCharFormat()
 	m_cfString = m_cfDefault;
 }
 
+// templates will be green color
+// <*ment>
+// <*ing>
+// <*ed>
+// <*ision>
+// <*tion>
+// <*ous>
+// <*ly>
+// <*able>
+// <*ful>
+// <*ent>
+// <*al>
+// <*ion>
+// <*ully>
+// <*ior>
+// <*ity>
+// <*fy>
+// <*ite>
+
 void CSyntaxColorizer::createDefaultKeywordList()
 {
    LPTSTR sKeywords = 
@@ -65,13 +84,10 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "above,"
       "across,"
       "after,"
-      "again,"
-      
       "all,"
       "along,"
       "also,"
       "although,"
-      "always,"
       "among,"
       "an,"
       "and,"
@@ -101,7 +117,6 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "either,"
       "even,"
       "every,"
-      "evident,"
       "except,"
       "explicit,"
       "farther,"
@@ -109,9 +124,7 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "few,"
       "fewer,"
       "for,"
-      "forever,"
       "from,"
-      "furthermore,"
       "here,"
       "him,"
       "his,"
@@ -135,10 +148,8 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "moreover,"
       "most,"
       "my,"
-      "never,"
       "nope,"
       "not,"
-      "obvious,"
       "of,"
       "off,"
       "often,"
@@ -152,7 +163,6 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "our,"
       "out,"
       "over,"
-      "overall,"
       "per,"
       "rather,"
       "self,"
@@ -171,7 +181,6 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "than,"
       "then,"
       "there,"
-      "therefore,"
       "these,"
       "they,"
       "thine,"
@@ -223,6 +232,17 @@ LPTSTR sVerbForms =
    "shall,should,"
 ;
 
+LPTSTR sAdverb = 
+   "again,"
+   "forever,"
+   "furthermore,"
+   "always,"
+   "never,"
+   "therefore,"
+   "overall,"
+   "thus,"
+;
+
 LPTSTR sDirectives = 
    "past,"
    "late,"
@@ -235,7 +255,6 @@ LPTSTR sDirectives =
    "because,"
    "few,"
    "most,"
-   "thus,"
    "thereby,"
 
    "many,"
@@ -271,11 +290,17 @@ LPTSTR sDirectives =
    "versus,"
    "nearly,"
    "roughly,"
+
+   "somewhat,"
    "something,"
    "someone,"
-   "somewhat,"
+   "somebody,"
    "anything,"
-
+   "anyone,"
+   "anybody,"
+   "everything,"
+   "everyone,"
+   "everybody,"
 
    "itself,"
    "myself,"
@@ -290,7 +315,6 @@ LPTSTR sDirectives =
    "entire,"
    "entirely,"
    "especially,"
-   "everything,"
    "general,"
    "generally,"
    "finally,"
@@ -344,8 +368,12 @@ LPTSTR sDirectives =
    "timelessly,"
    "apparently,"
    "obviously,"
+   "evidently,"
    "doubtless,"
    "doubtlessly,"
+
+   "evident,"
+   "obvious,"
 
    "partially,"
    "partly,"
@@ -825,6 +853,7 @@ LPTSTR sVerbsExtended =
    AddKeyword(sVerbsContext, RGB(0, 0, 255), GRP_KEYWORD);
    AddKeyword(sVerbsExtended, RGB(0, 0, 255), GRP_KEYWORD);
    AddKeyword(sVerbForms, RGB(128, 0, 192), GRP_KEYWORD);
+   AddKeyword(sAdverb, RGB(128, 128, 128), GRP_KEYWORD);
    
    AddKeyword("REM,Rem,rem", RGB(255, 0, 255), 4);
 }
