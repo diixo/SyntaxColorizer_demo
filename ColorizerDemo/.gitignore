@@ -4,6 +4,8 @@
 *.aps
 *.ncb
 *.user
+*.db
+*.opendb
 Debug/
 Release/
 x64/
