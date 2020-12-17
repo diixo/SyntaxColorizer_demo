@@ -928,9 +928,9 @@ LPTSTR sVerbsExtended =
 	//AddKeyword(sPragmas, CLR_KEYWORD, GRP_KEYWORD);
 
    AddKeyword(sKeywords, RGB(255, 128, 0), GRP_KEYWORD);
-   AddKeyword(sDirectives, RGB(255, 0, 0), GRP_KEYWORD);
+   AddKeyword(sDirectives, RGB(192, 0, 0), GRP_KEYWORD);
    AddKeyword(sVerbsContext, RGB(0, 0, 255), GRP_KEYWORD);
-   AddKeyword(sVerbsExtended, RGB(0, 0, 255), GRP_KEYWORD);
+   AddKeyword(sVerbsExtended, RGB(0, 0, 128), GRP_KEYWORD);
    AddKeyword(sVerbForms, RGB(128, 0, 192), GRP_KEYWORD);
    AddKeyword(sAdverb, RGB(128, 128, 128), GRP_KEYWORD);
    
@@ -977,6 +977,7 @@ void CSyntaxColorizer::createTables()
    *(m_pAllowable + '"') = true;
    *(m_pAllowable + '\'') = true;
    *(m_pAllowable + '*') = true;
+   *(m_pAllowable + '-') = true;
 }
 
 void CSyntaxColorizer::deleteTables()
