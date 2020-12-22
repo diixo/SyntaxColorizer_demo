@@ -139,6 +139,7 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "as,"
       "at,"
       "away,"
+      "back,"
       "because,"
       "before,"
       "behind,"
@@ -251,7 +252,14 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "yet,"
       "you,"
       "your,"
-      "yours"
+      "yours,"
+////////////////////
+      "aside,"
+      "forward,"
+      "backward,"
+      "forth,"
+      "apart,"
+      "against,"
 ;
 
 LPTSTR sVerbForms = 
@@ -270,7 +278,7 @@ LPTSTR sVerbForms =
    "may,might,"
    "will,would,"
    "shall,should,"
-   "gives,giving,gave,given"
+   "gives,giving,gave,given,"
 ;
 
 LPTSTR sAdverb = 
@@ -284,7 +292,6 @@ LPTSTR sAdverb =
    "therefore,"
    "overall,"
    "thus,"
-   "apart,"
    "together,"
    "however,"
    "sometimes,"
@@ -351,9 +358,6 @@ LPTSTR sDirectives =
    "day,"
    "current,"
 
-   "forward,"
-   "backward,"
-
    "free,"
    "well,"
 
@@ -367,8 +371,6 @@ LPTSTR sDirectives =
    "nearby,"
    "alongside,"
    "except,"
-   "aside,"
-   "against,"
    "versus,"
    "nearly,"
    "roughly,"
@@ -406,7 +408,7 @@ LPTSTR sDirectives =
    "full,"
    "total,"
 
-   "according,"
+   //"according,"
    "accordingly,"
    "respectively,"
    "big,"
@@ -488,7 +490,6 @@ LPTSTR sDirectives =
 "ask,"
 "aspire,"
 "attempt,"
-"back,"
 "be,"
 "become,"
 "begin,"
@@ -977,7 +978,6 @@ void CSyntaxColorizer::createTables()
    *(m_pAllowable + '"') = true;
    *(m_pAllowable + '\'') = true;
    *(m_pAllowable + '*') = true;
-   *(m_pAllowable + '-') = true;
 }
 
 void CSyntaxColorizer::deleteTables()
@@ -1059,7 +1059,7 @@ void CSyntaxColorizer::addKey(LPCTSTR Keyword, CHARFORMAT cf, int grp) //add in 
 			m_pskKeyword = pskNewKey;
 		}
 		//check to see if new keyword already exists at the first node
-		else if(strcmp(Keyword,m_pskKeyword->keyword) == 0)
+		else if(strcmp(Keyword, m_pskKeyword->keyword) == 0)
 		{
 			//the keyword exists, so replace the existing with the new
 			pskNewKey->pNext = m_pskKeyword->pNext;
@@ -1071,17 +1071,18 @@ void CSyntaxColorizer::addKey(LPCTSTR Keyword, CHARFORMAT cf, int grp) //add in 
 		{
 			prev = m_pskKeyword;
 			curr = m_pskKeyword->pNext;
-			while(curr != NULL && strcmp(curr->keyword,Keyword) < 0)
+			while(curr != NULL && strcmp(curr->keyword, Keyword) < 0)
 			{
 				prev = curr;
 				curr = curr->pNext;
 			}
-			if(curr != NULL && strcmp(curr->keyword,Keyword) == 0)
+			if(curr != NULL && strcmp(curr->keyword, Keyword) == 0)
 			{
 				//the keyword exists, so replace the existing with the new
 				prev->pNext = pskNewKey;
 				pskNewKey->pNext = curr->pNext;
-				delete curr->keyword; delete curr;
+            delete curr->keyword;
+            delete curr;
 			}
 			else
 			{
@@ -1287,7 +1288,7 @@ void CSyntaxColorizer::colorize(LPTSTR lpszBuf, CRichEditCtrl *pCtrl, long iOffs
 			{
 				int x1 = 0, y1 = 0;
             iStart = iOffset + x;
-				while (pskTemp->keyword[x1])
+				while (pskTemp->keyword[x1] && (y1 == 0))
 				{
 					y1 += char(tolower(lpszTemp[x1])) ^ pskTemp->keyword[x1];
 					x1++;
