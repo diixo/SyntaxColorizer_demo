@@ -253,6 +253,8 @@ void CSyntaxColorizer::createDefaultKeywordList()
       "you,"
       "your,"
       "yours,"
+      "mine,"
+      "theirs,"
 ////////////////////
       "aside,"
       "forward,"
@@ -289,6 +291,7 @@ LPTSTR sAdverb =
    "furthermore,"
    "always,"
    "never,"
+   "ever,"
    "therefore,"
    "overall,"
    "thus,"
