@@ -367,6 +367,7 @@ LPTSTR sDirectives =
    "further,"
    "matter,"
 
+   "almost,"
    "beside,"
    "near,"
    "far,"
